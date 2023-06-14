@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Blog Website</title>
+    <style>
+        /* CSS styles for the landing page */
+        /* Add your own styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar li {
+            margin-right: 10px;
+        }
+
+        .navbar li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .segment {
+            width: calc(100% / 3 - 20px);
+            margin-bottom: 20px;
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+
+        @media (max-width: 768px) {
+            .segment {
+                width: 100%;
+            }
+        }
+
+        /* Add more styles for other sections as needed */
+
+        .hero {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 16px;
+        }
+
+        .hero .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .hero .button:hover {
+            background-color: #555;
+        }
+
+        .news {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .news h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .news .news-feed {
+            margin-top: 20px;
+        }
+
+        .news .news-item {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .news .news-item h4 {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .news .news-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .news .news-item a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .news .news-item a:hover {
+            text-decoration: underline;
+        }
+
+        .events {
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .events h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .events .announcements {
+            margin-top: 20px;
+        }
+
+        .events .announcement-item {
+            margin-bottom: 20px;
+        }
+
+        .events .announcement-item h4 {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .events .announcement-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .jobs {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .jobs h2 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .jobs .announcement-item {
+            margin-bottom: 20px;
+        }
+
+        .jobs .announcement-item h4 {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .jobs .announcement-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Blogs World</h1>
+            <!-- Navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Blogs World!</h2>
+            <p>Discover valuable insights, news, and events in our blog community.</p>
+            <a href="#blogs" class="button">Explore Blogs</a>
+        </div>
+    </section>
+
+    <!-- Segments and Sub-segments Section -->
+    <section id="blogs" class="blogs">
+        <div class="container">
+            <h2>Blogs</h2>
+
+            <div class="segments-container">
+                <div class="segment">
+                    <h3 class="segment-title">Photography Insights</h3>
+                    <ul class="sub-segment">
+                        <li><a href="./art_photography.html">The Art of Photography</a></li>
+                        <li><a href="./nature.html">Exploring Nature's Beauty</a></li>
+                        <li><a href="./blacknwhite.html">Mastering Black and White Photography</a></li>
+                        <li><a href="./portrait.html">Portraiture Photography: Capturing the Essence of People</a></li>
+                        <li><a href="./landscape.html">Landscape Photography: Discovering the Beauty of the Natural
+                                World</a></li>
+                    </ul>
+                </div>
+
+                <div class="segment">
+                    <h3 class="segment-title">Fitness and Wellness advice</h3>
+                    <ul class="sub-segment">
+                        <li><a href="./healthyeating.html">Healthy Eating Habits for a Better Life</a></li>
+                        <li><a href="./fitness.html">Fitness Tips for Busy Professionals</a></li>
+                        <li><a href="./yoga.html">Yoga and Meditation for Stress Relief</a></li>
+                        <li><a href="./mindful.html">Mindful Exercise: Finding Balance for Body and Mind</a></li>
+                        <li><a href="./nutrition.html">Nutrition for Optimal Health: Fueling Your Body Right</a></li>
+                    </ul>
+                </div>
+
+                <div class="segment">
+                    <h3 class="segment-title">Exploring the world</h3>
+                    <ul class="sub-segment">
+                        <li><a href="./travel.html">Travel Destinations: A Journey to Remember</a></li>
+                        <li><a href="./cultural.html">Cultural Experiences Around the World</a></li>
+                        <li><a href="./tips.html">Tips for Planning a Budget-Friendly Vacation</a></li>
+                        <li><a href="./daytrip.html">A Day Trip Adventure</a></li>
+                        <li><a href="./solo.html">Solo Travel</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- News Feeds Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2>News Feeds</h2>
+            <div class="news-feed">
+                <h3>Latest News</h3>
+                <div class="news-item">
+                    <h4>Exciting New Photography Techniques</h4>
+                    <p>Discover innovative photography techniques that will take your skills to the next level. Learn
+                        how to
+                        capture stunning photos with unique perspectives and creative compositions.</p>
+                    <a href="./news1.html">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h4>Industry Experts Share Insights</h4>
+                    <p>Leading experts in the field of fitness and wellness reveal their top tips for maintaining a
+                        healthy
+                        lifestyle. Get expert advice on exercise routines, nutrition, and mindfulness practices.</p>
+                    <a href="./news2.html">Read More</a>
+                </div>
+                <div class="news-item">
+                    <h4>New Travel Destinations Unveiled</h4>
+                    <p>Explore breathtaking travel destinations that have recently gained popularity among adventurers.
+                        From
+                        hidden gems to iconic landmarks, these destinations promise unforgettable experiences.</p>
+                    <a href="./news3.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <!-- Add your upcoming events here -->
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="announcement-item">
+                    <h4>Upcoming Photography Workshop</h4>
+                    <p>We're excited to announce an upcoming photography workshop hosted by renowned photographer John
+                        Smith. Enhance your skills, learn from the expert, and join us for an immersive learning
+                        experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs">
+        <div class="container">
+            <h2>Jobs</h2>
+            <!-- Add job listings here -->
+            <div class="job-listings">
+                <div class="job-item">
+                    <h4>Photography Internship</h4>
+                    <p>We're currently seeking a passionate and talented individual to join our team as a photography
+                        intern. This internship offers a unique opportunity to gain hands-on experience in the field of
+                        photography.</p>
+                </div>
+                <div class="job-item">
+                    <h4>Content Writer - Fitness & Wellness</h4>
+                    <p>If you have a passion for fitness and wellness and possess excellent writing skills, we want to
+                        hear
+                        from you. Join our team as a content writer and contribute engaging articles on various health
+                        and
+                        wellness topics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Blogs World. All rights reserved. | Designed by Theertha K</p>
+    </footer>
+</body>
+
+</html>
